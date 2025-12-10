@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;           /* let body stretch full window height */
+  margin: 0;              /* remove default white margins */
+}
+
+body {
+  background-color: #edbef1;   /* your light blue */
+}
+
+/* row that holds all folders */
+.folder-row {
+    background-color: lightblue;
+  display: flex;
+  gap: 40px;          /* space between folders */
+  padding: 40px;
+}
+
+/* each folder (icon + title) */
+.folder-box {
+    
+  display: flex;
+  flex-direction: column;  /* stack icon on top, title below */
+  align-items: center;
+  text-decoration: none;   /* remove blue underline */
+  color: #fff562;             /* title color */
+}
+
+/* icon sizing */
+.folder-icon {
+  width: 120px;
+  height: 120px;
+}
+
+/* title under the icon */
+.folder-title {
+  margin-top: 8px;
+  font-size: 20px;
+}

@@ -1,0 +1,180 @@
+body, body {
+  font-size: 60px;
+  margin: 1;
+  height: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: black;
+  padding: 120px;
+}
+
+.urdu-text {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-size: 2rem; /* Adjust as needed */
+  direction: rtl;  /* Right-to-left for Urdu */
+}
+
+.container {
+  background-image: url('DSCN1111.JPG');
+  background-size: 72%;      /* Make the image cover the container */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 400px;
+  margin: 40px auto 0 auto;
+  padding: 24px 32px;
+  text-align: left;
+  padding: 40px;
+  color: white;                /* Make text readable */
+}
+
+
+nav {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0 0 12px 0;
+}
+
+
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+  grid-template-rows: repeat(4, 120px);
+  gap: 25px 3px;
+  background: #000000;
+  padding: 90px 380px;
+  border-radius: 100px;
+  
+  .centerpiece {
+  grid-row: 1 / span 3;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centerpiece img {
+  height: 450px;
+  width: auto;
+}
+}
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.menu-item img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: brightness(0.85);
+}
+.menu-item span {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 2px #000;
+  pointer-events: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 0.95rem;
+  color: #000000;
+}
+footer a {
+  color: #66aaff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 120px 1fr;
+    gap: 9px;
+    padding:9px;
+    margin: -100px;
+    border-radius: 20px;
+  }
+
+  .menu-item {
+    justify-content: center;
+    padding: px;
+     ;
+  }
+
+  .menu-item img {
+    width: 120px; /* smaller images */
+    filter: brightness(0.75); /* keep rustic effect */
+    border-radius: 6px;
+  }
+
+  .menu-item span {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .centerpiece {
+    grid-column: auto;
+    margin: 3 auto 20px;
+  }
+
+  .centerpiece img {
+    width: 150%;
+    height:fit-content;
+    max-height: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    margin-bottom: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

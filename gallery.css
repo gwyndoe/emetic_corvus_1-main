@@ -1,0 +1,35 @@
+body {
+  background: #222;
+}
+
+/* Thumbnails */
+img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 5px;
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+
+/* Hover nicety */
+img:hover {
+  transform: scale(1.03);
+}
+
+/* CLICK + HOLD = zoom */
+img:active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+  z-index: 9999;
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  cursor: zoom-out;
+}
